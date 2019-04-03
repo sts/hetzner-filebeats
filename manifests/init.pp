@@ -85,6 +85,7 @@ class filebeats (
   $logstash_ssl_certificate                  = $filebeats::params::logstash_ssl_certificate,
   $logstash_ssl_certificate_authorities      = $filebeats::params::logstash_ssl_certificate_authorities,
   $logstash_ssl_certificate_key              = $filebeats::params::logstash_ssl_certificate_key,
+  $logstash_ssl_supported_protocols          = $filebeats::params::logstash_ssl_supported_protocols,
   $logstash_worker                           = $filebeats::params::logstash_worker,
   $prospectors                               = $filebeats::params::prospectors,
   $service_bootstrapped                      = $filebeats::params::service_bootstrapped,
