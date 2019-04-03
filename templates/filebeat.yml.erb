@@ -62,6 +62,9 @@ output.logstash:
 <% if @logstash_ssl_certificate_key != '' -%>
   ssl.key: <%= @logstash_ssl_certificate_key %>
 <% end -%>
+<% if @logstash_ssl_supported_protocols != '' -%>
+  ssl.supported_protocols: <%= @logstash_ssl_supported_protocols %>
+<% end -%>
 <% end -%>
 <% if @elasticsearch_hosts != [] -%>
 
